@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Sticky Example</title>
+    <style>
+        .container {
+            height: 200px;
+            overflow: auto;
+            border: 1px solid black;
+        }
+        .sticky-box {
+            position: sticky;
+            top: 10px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .content {
+            height: 1000px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sticky-box">Sticky Box</div>
+        <div class="content"></div>
+    </div>
+</body>
+</html>
