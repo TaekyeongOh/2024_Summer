@@ -7,7 +7,9 @@ function App() {
   let [하트, 하트변경] =useState(0);
   
   function 제목바꾸기(){
-    글제목변경(['여자 코트 추천','강남 우동 맛집', '분당 우동 맛집']);
+    var newArray = [...글제목];
+    newArray[0] = '여자 코트 추천';
+    글제목변경(newArray)
   }
 
   return (
@@ -32,8 +34,26 @@ function App() {
         <p>2022.03.01, 서울 강남구</p>
         <hr/>
       </div>
+      
+      {/* <div className='modal'>
+        <h2>제목</h2>
+        <p>날짜</p>
+        <p>상세내용</p>
+      </div> */}
+      <Modal />
+
     </div>
   );
+}
+
+function Modal(){
+  return(
+    <div className='modal'>
+      <h2>제목</h2>
+      <p>날짜</p>
+      <p>상세내용</p>
+    </div>
+  )
 }
 
 export default App;
