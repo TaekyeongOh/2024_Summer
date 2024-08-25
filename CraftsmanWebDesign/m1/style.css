@@ -1,0 +1,138 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.wrap{
+    width: 1280px;
+    height: 1080px;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    background-color: blue;
+    position: relative;
+    height: 100px;
+    width: 1280px;
+    margin: 0;
+}
+.head1{
+    background-color: #EAE9EE;
+    width: 200px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.head2{
+    background-color: #C2C3D6;
+    width: 1080px;
+    height: 100px;
+}
+.head2 li{
+    list-style: none;
+    display: flex;
+}
+
+/* nav */
+.nav>ul{
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+}
+.nav>ul>li{
+    position: relative;
+}
+.nav>ul>li>a{
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #C0C0FB;
+    text-decoration: none;
+    color: black;
+}
+.nav>ul>li>a:hover{
+    background-color: #9999EF;
+}
+.nav>ul>li>ul{
+    position: absolute;
+    left: 0;
+    top: 38px;
+    background-color: #dfdfff;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.nav>ul>li>ul>li>a{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #dfdfff;
+    text-decoration: none;
+    color: black;
+}
+.nav>ul>li>ul>li>a:hover{
+    background-color: rgb(241, 241, 247);
+}
+
+/* main */
+
+.main1{
+    width: 1280px;
+    height: 440px;
+    background-color: #E1E1F5;
+}
+.main2{
+    display: flex;
+}
+.main2-1{
+    width: 130px;
+    height: 440px;
+    background-color: #CACBE4;
+    margin: 0;
+}
+.main2-2{
+    background-color: #B1B2D5;
+    width: 400px;
+    height: 440px;
+    margin: 0;
+}
+.main2-3{
+    background-color: #7878D4;
+    width: 750px;
+    height: 440px;
+    margin: 0;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    width: 1280px;
+    height: 100px;
+}
+.foot1{
+    width: 200px;
+    height: 100px;
+    background-color: #3A258A;
+    margin: 0;
+}
+.foot2{
+    width: 1080px;
+    height: 100px;
+    margin: 0;
+    background-color: #6469CD;
+}
+
+/* 자바스크립트용 CSS */
+.nav>ul>li>ul{
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: all 600ms;
+}
