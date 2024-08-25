@@ -1,0 +1,17 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header{
+    width: 100%;
+    display: flex;
+}
+#header .logo{
+    width: 20%;
+    height: 100px;
+    background-color: #efefef;
+}
