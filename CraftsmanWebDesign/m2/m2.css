@@ -1,0 +1,129 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.wrap{
+    width: 1280px;
+    height: 1080px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: blue;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+.header{
+    width: 1280px;
+    height: 100px;
+    background-color: #C2C3D6;
+    display: flex;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    background-color: #EAE9EE;
+}
+.nav{
+    width: 1080px;
+    height: 100px;
+    background-color: #C2C3D6;
+    display: flex;
+}
+.nav>ul{
+    display: flex;
+    margin-top: 30px;
+    justify-content: right;
+}
+.nav>ul>li{
+    position: relative;
+    list-style: none;
+}
+.nav>ul>li>a{
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #E1E1F5;
+}
+.nav>ul>li>a:hover{
+    background-color: #fcfcfc;
+}
+.nav>ul>li>ul>li{
+    list-style: none;
+}
+.nav>ul>li>ul{
+    position: absolute;
+    left: 0;
+    top: 38px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.nav>ul>li>ul>li>a{
+    display: inline-block;
+    padding: 10px;
+    background-color: #dcdcff;
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav>ul>li>ul>li>a:hover{
+    background-color: #fff;
+}
+
+/* main */
+.main{
+    width: 1280px;
+    height: 880px;
+    display: block;
+}
+.sec1{
+    width: 1280px;
+    height: 440px;
+    background-color: #C0C0FB;
+}
+.sec2{
+    width: 1280px;
+    height: 440px;
+    display: flex;
+    background-color: #B0B1D4;
+}
+.sec2-1{
+    width: 33.3333%;
+    height: 440px;
+    background-color: #E1E1F5;
+}
+.sec2-2{
+    width: 33.3333%;
+    height: 440px;
+    background-color: #B0B1D4;
+}
+.sec2-3{
+    width: 33.3333%;
+    height: 440px;
+    background-color: #7878D4;
+}
+
+/* footer */
+.footer{
+    display: flex;
+}
+.footer1{
+    width: 200px;
+    height: 100px;
+    background-color: #3A258A;
+    margin: 0;
+}
+.footer2{
+    width: 1080px;
+    height: 100px;
+    background-color: #6469CD;
+}
+
+/* 자바스크립트 CSS */
+.nav>ul>li>ul{
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: all 600ms;
+}
