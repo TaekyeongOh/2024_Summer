@@ -1,0 +1,151 @@
+*{
+    background-color: #fff;
+}
+.wrap{
+    background-color: black;
+    width: 1280px;
+    height: 1080px;
+    margin: 0 auto;   
+    padding: 0;
+}
+
+/* header */
+.header{
+    display: flex;
+    width: 1280px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+}
+.header::after{
+    width: 100%;
+    height: 0;
+    background-color: aliceblue;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 1;
+    transition: all 400ms;
+}
+.header.on::after{
+    height: 155px;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    background-color: #EAE9EE;
+}
+.nav{
+    width: 1080px;
+    height: 100px;
+    background-color: #C2C3D6;
+}
+.nav>ul{
+    display: flex;
+    list-style: none;
+    background-color: ghostwhite;
+}
+.nav>ul>li{
+    position: relative;
+}
+.nav>ul>li>a{
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #B1B2D5;
+}
+.nav>ul>li>a:hover{
+    background: #9999EF;
+}
+.nav>ul>li>ul{
+    position: absolute;
+    left: 0;
+    top: 39px;
+    width: 100%;
+    /* text-align: center; */
+    /* display: none; */
+}
+.nav>ul>li>ul>li>a{
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.nav>ul>li>ul>li:hover{
+    background-color: #CACBE4;
+}
+.submenu{
+    list-style: none;
+}
+
+/* main */
+.main{
+    width: 1280px;
+    height: 880px;
+    background-color: blue;
+}
+.sec01{
+    display: flex;
+}
+.sec01-1{
+    background-color: #E1E1F5;
+    width: 250px;
+    height: 440px;
+}
+.sec01-2{
+    display: block;
+    background-color: green;
+    width: 730px;
+    height: 440px;
+}
+.sec01-2-1{
+    background-color: #C0C0FB;
+    width: 730px;
+    height: 220px;
+}
+.sec01-2-2{
+    background-color: #9999EF;
+    width: 730px;
+    height: 220px;
+}
+.sec01-3{
+    background-color: #7878D4;
+    width: 300px;
+    height: 440px;
+}
+.sec02{
+    display: flex;
+}
+.sec02-1{
+    background-color: #7878D4;
+    width: 130px;
+    height: 440px;
+}
+.sec02-2{
+    width: 400px;
+    height: 440px;
+    background-color: #B1B2D5;
+}
+.sec02-3{
+    width: 750px;
+    height: 440px;
+    background-color: #CACBE4;
+}
+
+/* footer */
+.footer{
+    display: flex;
+}
+.foot1{
+    background-color: #3A258A;
+    width: 200px;
+    height: 100px;
+}
+.foot2{
+    background-color: #6469CD;
+    width: 880px;
+    height: 100px;
+}
+.foot3{
+    background-color: #3A258A;
+    width: 200px;
+    height: 100px;
+}
