@@ -5,13 +5,14 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const Section01 = () => {
   const settings = {
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    centerMode: true,
+    dots: true,
+    infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1
-    };
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 500,
+    rtl: false,
+  };
 
   return (
     <div className='sec01'>
@@ -21,32 +22,43 @@ const Section01 = () => {
           <p>지학사 교과서가 수업에 필요한 모든 것을 지원합니다.</p>
         </div>
       </div>
-      <div className="mpr-slide">
-        <div className="tit-box">
-          <h5 className='ft_out'>EVENT</h5>
-        </div>
-      </div>
       <div className="sec01-right">
         <Slider {...settings}>
-          <div className="slide">
-            <img src="http://fillmurray.com/300/300" alt="Slide 1" className="img-responsive" />
-            <h1>slide 1</h1>
+          <div>
+            <div style={{ 
+              backgroundImage: 'url(https://textbook.jihak.co.kr/img/bg_mvsimg6.png)', 
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              width: '100%', 
+              height: '800px' 
+            }}></div>
           </div>
-          <div className="slide">
-            <img src="http://fillmurray.com/300/300" alt="Slide 2" className="img-responsive" />
-            <h1>slide 2</h1>
+          <div>
+            <div style={{ 
+              backgroundImage: 'url(https://textbook.jihak.co.kr/img/bg_mvsimg5.png)', 
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              width: '100%', 
+              height: '800px' 
+            }}></div>
           </div>
-          <div className="slide">
-            <img src="http://fillmurray.com/300/300" alt="Slide 3" className="img-responsive" />
-            <h1>slide 3</h1>
+          <div>
+            <div style={{ 
+              backgroundImage: 'url(https://textbook.jihak.co.kr/img/bg_mvsimg4.png)', 
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              width: '100%', 
+              height: '800px' 
+            }}></div>
           </div>
-          <div className="slide">
-            <img src="http://fillmurray.com/300/300" alt="Slide 4" className="img-responsive" />
-            <h1>slide 4</h1>
-          </div>
-          <div className="slide">
-            <img src="http://fillmurray.com/300/300" alt="Slide 5" className="img-responsive" />
-            <h1>slide 5</h1>
+          <div>
+            <div style={{ 
+              backgroundImage: 'url(https://textbook.jihak.co.kr/img/bg_mvsimg3.png)', 
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              width: '100%', 
+              height: '800px' 
+            }}></div>
           </div>
         </Slider>
       </div>
