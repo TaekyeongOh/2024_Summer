@@ -37,24 +37,28 @@ const Section02 = () => {
           </li>
         </ul>
       </p>
-      <ul className='books'>
-        <li className='book b1'></li>
-        <li className='book b2'></li>
-        <li className='book b3'></li>
-        <li className='book b4'></li>
-        <li className='book b5'></li>
-        <li className='book b6'></li>
-        <li className='book b7'></li>
-        <li className='book b8'></li>
-        <li className='book b9'></li>
-        <li className='book b10'></li>
-        <li className='book b11'></li>
-        <li className='book b12'></li>
-        <li className='book b13'></li>
-        <li className='book b14'></li>
-        <li className='book b15'></li>
-        <li className='book b16'></li>
-      </ul>
+      <div className="books">
+        <ul className='books1'>
+          <li className='book b1'></li>
+          <li className='book b2'></li>
+          <li className='book b3'></li>
+          <li className='book b4'></li>
+          <li className='book b5'></li>
+          <li className='book b6'></li>
+          <li className='book b7'></li>
+          <li className='book b8'></li>
+        </ul>
+        <ul className='books2'>
+          <li className='book b9'></li>
+          <li className='book b10'></li>
+          <li className='book b11'></li>
+          <li className='book b12'></li>
+          <li className='book b13'></li>
+          <li className='book b14'></li>
+          <li className='book b15'></li>
+          <li className='book b16'></li>
+        </ul>
+      </div>
     </div>
   )
 }
